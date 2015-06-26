@@ -1,0 +1,394 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>My Project: D:/eclipse_Android/code/And_cildern/src/com/board/DBConnect.java 소스 파일</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'검색');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>메인&#160;페이지</span></a></li>
+      <li><a href="../../namespaces.html"><span>패키지</span></a></li>
+      <li><a href="../../annotated.html"><span>클래스</span></a></li>
+      <li class="current"><a href="../../files.html"><span>파일들</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="검색" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../files.html"><span>파일&#160;목록</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('d6/d42/a00043_source.html','../../');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>모두</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>클래스</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>네임스페이스들</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>파일들</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>함수</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>변수</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">DBConnect.java</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d6/d42/a00043.html">이 파일의 문서화 페이지로 가기</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">package </span>com.board;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">import</span> java.io.BufferedReader;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">import</span> java.io.BufferedWriter;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">import</span> java.io.IOException;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">import</span> java.io.InputStreamReader;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">import</span> java.io.OutputStream;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">import</span> java.io.OutputStreamWriter;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">import</span> java.io.UnsupportedEncodingException;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">import</span> java.net.HttpURLConnection;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">import</span> java.net.URL;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">import</span> java.net.URLEncoder;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">import</span> java.util.ArrayList;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">import</span> java.util.List;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">import</span> java.util.concurrent.ExecutionException;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">import</span> org.apache.http.message.BasicNameValuePair;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">import</span> org.json.JSONArray;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">import</span> org.json.JSONException;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">import</span> org.json.JSONObject;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">import</span> android.R.integer;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">import</span> android.os.AsyncTask;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="../../da/d45/a00011.html">   25</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../da/d45/a00011.html">DBConnect</a> <span class="keyword">extends</span> AsyncTask&lt;String, Integer, String&gt; {</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="../../da/d45/a00011.html#ab4303261ff7360b51ab25379d6c0ab4d">   26</a></span>&#160;    <span class="keyword">static</span> String <a class="code" href="../../da/d45/a00011.html#ab4303261ff7360b51ab25379d6c0ab4d">dbResult</a> = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="../../da/d45/a00011.html#a12a83bd2551d1bb771a5f403f8926309">   27</a></span>&#160;    <span class="keyword">static</span> ArrayList&lt;String[]&gt; <a class="code" href="../../da/d45/a00011.html#a12a83bd2551d1bb771a5f403f8926309">jsonList</a> = <span class="keyword">new</span> ArrayList&lt;String[]&gt;();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="../../da/d45/a00011.html#a9b21316d9d684db6bcb9053c6ad16755">   29</a></span>&#160;    <span class="keyword">static</span> String[] <a class="code" href="../../da/d45/a00011.html#a9b21316d9d684db6bcb9053c6ad16755">readParam</a> = null;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="../../da/d45/a00011.html#ad6e6292d042b508db86c3d5d090fd3c7">   30</a></span>&#160;    <span class="keyword">static</span> String[] <a class="code" href="../../da/d45/a00011.html#ad6e6292d042b508db86c3d5d090fd3c7">writeParam</a> = null;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="../../da/d45/a00011.html#a974fea55e426061eb3e3c0ee9c9217e5">   32</a></span>&#160;    <span class="keyword">public</span> ArrayList&lt;String[]&gt; <a class="code" href="../../da/d45/a00011.html#a974fea55e426061eb3e3c0ee9c9217e5">serverRead</a>(String... params) {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="comment">// static value reset</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        jsonList.clear();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <a class="code" href="../../da/d45/a00011.html#a9b21316d9d684db6bcb9053c6ad16755">readParam</a> = <span class="keyword">new</span> String[params.length];</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <a class="code" href="../../da/d45/a00011.html#ad6e6292d042b508db86c3d5d090fd3c7">writeParam</a> = <span class="keyword">new</span> String[1];</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; params.length; i++) {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            readParam[i] = params[i];</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordflow">try</span> {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            <a class="code" href="../../da/d45/a00011.html">DBConnect</a> db = <span class="keyword">new</span> <a class="code" href="../../da/d45/a00011.html">DBConnect</a>();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            db.execute(<span class="stringliteral">&quot;http://14.63.213.246/board/quary_select.php&quot;</span>).<span class="keyword">get</span>();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            <a class="code" href="../../da/d45/a00011.html#adc98daf42b69affe6c366eed6c0b8fa1">getResult</a>(readParam);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        } <span class="keywordflow">catch</span> (InterruptedException e) {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <span class="comment">// TODO Auto-generated catch block</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            e.printStackTrace();</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        } <span class="keywordflow">catch</span> (ExecutionException e) {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            <span class="comment">// TODO Auto-generated catch block</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            e.printStackTrace();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../da/d45/a00011.html#a12a83bd2551d1bb771a5f403f8926309">jsonList</a>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="../../da/d45/a00011.html#a6d799aa61ed57fa2da863c374177974a">   57</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">boolean</span> <a class="code" href="../../da/d45/a00011.html#a6d799aa61ed57fa2da863c374177974a">serverWrite</a>(String... params) {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="comment">// static value reset</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        jsonList.clear();</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <a class="code" href="../../da/d45/a00011.html#a9b21316d9d684db6bcb9053c6ad16755">readParam</a> = <span class="keyword">new</span> String[1];</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <a class="code" href="../../da/d45/a00011.html#ad6e6292d042b508db86c3d5d090fd3c7">writeParam</a> = <span class="keyword">new</span> String[params.length];</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; params.length; i++) {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <a class="code" href="../../da/d45/a00011.html#ad6e6292d042b508db86c3d5d090fd3c7">writeParam</a>[i] = params[i];</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordflow">try</span> {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <a class="code" href="../../da/d45/a00011.html">DBConnect</a> db = <span class="keyword">new</span> <a class="code" href="../../da/d45/a00011.html">DBConnect</a>();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            db.execute(<span class="stringliteral">&quot;http://14.63.213.246/board/quary_write.php&quot;</span>).<span class="keyword">get</span>();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        } <span class="keywordflow">catch</span> (InterruptedException e) {</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <span class="comment">// TODO Auto-generated catch block</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            e.printStackTrace();</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        } <span class="keywordflow">catch</span> (ExecutionException e) {</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <span class="comment">// TODO Auto-generated catch block</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            e.printStackTrace();</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="../../da/d45/a00011.html#ab4303261ff7360b51ab25379d6c0ab4d">dbResult</a>.equals(<span class="stringliteral">&quot;null&quot;</span>)) {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    }</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    </div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="../../da/d45/a00011.html#a1e9c90af52b391c165125c0726d5a41b">   85</a></span>&#160;    <span class="keyword">public</span> String <a class="code" href="../../da/d45/a00011.html#a1e9c90af52b391c165125c0726d5a41b">serverContext</a>(String params, String idx){</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="comment">// static value reset</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        jsonList.clear();</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <a class="code" href="../../da/d45/a00011.html#a9b21316d9d684db6bcb9053c6ad16755">readParam</a> = <span class="keyword">new</span> String[1];</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <a class="code" href="../../da/d45/a00011.html#ad6e6292d042b508db86c3d5d090fd3c7">writeParam</a> = <span class="keyword">new</span> String[2];</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <a class="code" href="../../da/d45/a00011.html#ad6e6292d042b508db86c3d5d090fd3c7">writeParam</a>[0] = params;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <a class="code" href="../../da/d45/a00011.html#ad6e6292d042b508db86c3d5d090fd3c7">writeParam</a>[1] = idx;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        readParam[0] = <span class="stringliteral">&quot;context&quot;</span>;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keywordflow">try</span> {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            <a class="code" href="../../da/d45/a00011.html">DBConnect</a> db = <span class="keyword">new</span> <a class="code" href="../../da/d45/a00011.html">DBConnect</a>();</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            db.execute(<span class="stringliteral">&quot;http://14.63.213.246/board/quary_context.php&quot;</span>).<span class="keyword">get</span>();</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            <a class="code" href="../../da/d45/a00011.html#adc98daf42b69affe6c366eed6c0b8fa1">getResult</a>(readParam[0]);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        } <span class="keywordflow">catch</span> (InterruptedException e) {</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            <span class="comment">// TODO Auto-generated catch block</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            e.printStackTrace();</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        } <span class="keywordflow">catch</span> (ExecutionException e) {</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            <span class="comment">// TODO Auto-generated catch block</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            e.printStackTrace();</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        }</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="keywordtype">int</span> num = jsonList.size()-1;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        String result = jsonList.get(num)[0];</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        jsonList.remove(num);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <span class="keywordflow">return</span> result;      </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    }</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    </div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="../../da/d45/a00011.html#a221b4a30776ac1dc717edc6f331a3359">  115</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">boolean</span> <a class="code" href="../../da/d45/a00011.html#a221b4a30776ac1dc717edc6f331a3359">serverEdit</a>(String...params) {</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="comment">// static value reset</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        jsonList.clear();</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <a class="code" href="../../da/d45/a00011.html#a9b21316d9d684db6bcb9053c6ad16755">readParam</a> = <span class="keyword">new</span> String[1];</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <a class="code" href="../../da/d45/a00011.html#ad6e6292d042b508db86c3d5d090fd3c7">writeParam</a> = <span class="keyword">new</span> String[params.length];</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; params.length; i++) {</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            <a class="code" href="../../da/d45/a00011.html#ad6e6292d042b508db86c3d5d090fd3c7">writeParam</a>[i] = params[i];</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        }</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <span class="keywordflow">try</span> {</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;            <a class="code" href="../../da/d45/a00011.html">DBConnect</a> db = <span class="keyword">new</span> <a class="code" href="../../da/d45/a00011.html">DBConnect</a>();</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            db.execute(<span class="stringliteral">&quot;http://14.63.213.246/board/quary_edit.php&quot;</span>).<span class="keyword">get</span>();</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        } <span class="keywordflow">catch</span> (InterruptedException e) {</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            <span class="comment">// TODO Auto-generated catch block</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            e.printStackTrace();</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        } <span class="keywordflow">catch</span> (ExecutionException e) {</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            <span class="comment">// TODO Auto-generated catch block</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            e.printStackTrace();</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        }</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="../../da/d45/a00011.html#ab4303261ff7360b51ab25379d6c0ab4d">dbResult</a>.equals(<span class="stringliteral">&quot;null&quot;</span>)) {</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        }</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    }</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    </div>
+<div class="line"><a name="l00143"></a><span class="lineno"><a class="line" href="../../da/d45/a00011.html#a9cff71ff1c81dc610645d6473c1ca3fd">  143</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">boolean</span> <a class="code" href="../../da/d45/a00011.html#a9cff71ff1c81dc610645d6473c1ca3fd">serverDelete</a>(String...params){</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        <span class="comment">// static value reset</span></div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        jsonList.clear();</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        <a class="code" href="../../da/d45/a00011.html#a9b21316d9d684db6bcb9053c6ad16755">readParam</a> = <span class="keyword">new</span> String[1];</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        <a class="code" href="../../da/d45/a00011.html#ad6e6292d042b508db86c3d5d090fd3c7">writeParam</a> = <span class="keyword">new</span> String[params.length];</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; params.length; i++) {</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;            <a class="code" href="../../da/d45/a00011.html#ad6e6292d042b508db86c3d5d090fd3c7">writeParam</a>[i] = params[i];</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        }</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        </div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        <span class="keywordflow">try</span> {</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            <a class="code" href="../../da/d45/a00011.html">DBConnect</a> db = <span class="keyword">new</span> <a class="code" href="../../da/d45/a00011.html">DBConnect</a>();</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;            db.execute(<span class="stringliteral">&quot;http://14.63.213.246/board/quary_delete.php&quot;</span>).<span class="keyword">get</span>();</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        } <span class="keywordflow">catch</span> (InterruptedException e) {</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;            <span class="comment">// TODO Auto-generated catch block</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;            e.printStackTrace();</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        } <span class="keywordflow">catch</span> (ExecutionException e) {</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            <span class="comment">// TODO Auto-generated catch block</span></div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            e.printStackTrace();</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        }</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="../../da/d45/a00011.html#ab4303261ff7360b51ab25379d6c0ab4d">dbResult</a>.equals(<span class="stringliteral">&quot;null&quot;</span>)) {</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        }       </div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    }</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        </div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    @Override</div>
+<div class="line"><a name="l00172"></a><span class="lineno"><a class="line" href="../../da/d45/a00011.html#a448828b506fb0d7740b7d4afe4021bec">  172</a></span>&#160;    <span class="keyword">protected</span> String <a class="code" href="../../da/d45/a00011.html#a448828b506fb0d7740b7d4afe4021bec">doInBackground</a>(String... urls) {</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        <span class="keywordflow">try</span> {</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            HttpURLConnection hurlc;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;            URL url = <span class="keyword">new</span> URL(urls[0]);</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;            hurlc = (HttpURLConnection) url.openConnection();</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;            hurlc.setRequestMethod(<span class="stringliteral">&quot;POST&quot;</span>); <span class="comment">// 전달방식을 설정한다. 기본값은 Get</span></div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;            hurlc.setDoOutput(<span class="keyword">true</span>); <span class="comment">// 서버로 데이터를 전송할 수 있도록 한다. true =</span></div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;                                        <span class="comment">// Post방식,</span></div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;                                        <span class="comment">// false = Get방식</span></div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;            hurlc.setDoInput(<span class="keyword">true</span>); <span class="comment">// 서버로부터 메세지를 받을 수 있도록 한다.);</span></div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;            List&lt;BasicNameValuePair&gt; Pairs = <span class="keyword">new</span> ArrayList&lt;BasicNameValuePair&gt;(</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;                    2);</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0, end = <a class="code" href="../../da/d45/a00011.html#ad6e6292d042b508db86c3d5d090fd3c7">writeParam</a>.length-1; i &lt; end; i+=2) {</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;                Pairs.add(<span class="keyword">new</span> BasicNameValuePair(<a class="code" href="../../da/d45/a00011.html#ad6e6292d042b508db86c3d5d090fd3c7">writeParam</a>[i],</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;                        <a class="code" href="../../da/d45/a00011.html#ad6e6292d042b508db86c3d5d090fd3c7">writeParam</a>[i+1]));</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;            }</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;            OutputStream outputStream = hurlc.getOutputStream();</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;            BufferedWriter bufferedWriter = <span class="keyword">new</span> BufferedWriter(</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;                    <span class="keyword">new</span> OutputStreamWriter(outputStream, <span class="stringliteral">&quot;UTF-8&quot;</span>));</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;            bufferedWriter.write(<a class="code" href="../../da/d45/a00011.html#a5ff12039919753c509fb687392d11c76">getURLQuery</a>(Pairs));</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;            bufferedWriter.flush();</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;            bufferedWriter.close();</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;            outputStream.close();</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;            BufferedReader in = <span class="keyword">new</span> BufferedReader(<span class="keyword">new</span> InputStreamReader(</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;                    hurlc.getInputStream()));</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;            String buffer;</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;            <span class="keywordflow">while</span> ((buffer = in.readLine()) != null) {</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;                <a class="code" href="../../da/d45/a00011.html#ab4303261ff7360b51ab25379d6c0ab4d">dbResult</a> = buffer;</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;            }</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        } <span class="keywordflow">catch</span> (IOException e) {</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;            <span class="comment">// TODO Auto-generated catch block</span></div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;            e.printStackTrace();</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        } <span class="keywordflow">catch</span> (Exception e) {</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;            e.printStackTrace();</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;        }</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../da/d45/a00011.html#ab4303261ff7360b51ab25379d6c0ab4d">dbResult</a>;</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    }</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;</div>
+<div class="line"><a name="l00217"></a><span class="lineno"><a class="line" href="../../da/d45/a00011.html#a5ff12039919753c509fb687392d11c76">  217</a></span>&#160;    <span class="keyword">private</span> String <a class="code" href="../../da/d45/a00011.html#a5ff12039919753c509fb687392d11c76">getURLQuery</a>(List&lt;BasicNameValuePair&gt; params) {</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        StringBuilder stringBuilder = <span class="keyword">new</span> StringBuilder();</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        <span class="keywordtype">boolean</span> first = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        <span class="keywordflow">for</span> (BasicNameValuePair pair : params) {</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;            <span class="keywordflow">if</span> (first)</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;                first = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;                stringBuilder.append(<span class="stringliteral">&quot;&amp;&quot;</span>);</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;            <span class="keywordflow">try</span> {</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;                stringBuilder</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;                        .append(URLEncoder.encode(pair.getName(), <span class="stringliteral">&quot;UTF-8&quot;</span>));</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;                stringBuilder.append(<span class="stringliteral">&quot;=&quot;</span>);</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;                stringBuilder</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;                        .append(URLEncoder.encode(pair.getValue(), <span class="stringliteral">&quot;UTF-8&quot;</span>));</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;            } <span class="keywordflow">catch</span> (UnsupportedEncodingException e) {</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;                e.printStackTrace();</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;            }</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        }</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        <span class="keywordflow">return</span> stringBuilder.toString();</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    }</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;</div>
+<div class="line"><a name="l00240"></a><span class="lineno"><a class="line" href="../../da/d45/a00011.html#adc98daf42b69affe6c366eed6c0b8fa1">  240</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">void</span> <a class="code" href="../../da/d45/a00011.html#adc98daf42b69affe6c366eed6c0b8fa1">getResult</a>(String... param) {</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        <span class="keywordflow">try</span> {</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;            <span class="keywordtype">int</span> paramNum = param.length;</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;            JSONArray jarr = <span class="keyword">new</span> JSONArray(<a class="code" href="../../da/d45/a00011.html#ab4303261ff7360b51ab25379d6c0ab4d">dbResult</a>);</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; jarr.length(); i++) {</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;                String[] arr = <span class="keyword">new</span> String[paramNum];</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;                JSONObject jobj = jarr.getJSONObject(i);</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;                <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; paramNum; j++) {</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;                    arr[j] = jobj.getString(param[j]);</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;                }</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;                jsonList.add(arr);</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;            }</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        } <span class="keywordflow">catch</span> (JSONException e) {</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;            <span class="comment">// TODO Auto-generated catch block</span></div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;            e.printStackTrace();</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        } <span class="keywordflow">catch</span> (Exception e) {</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;            e.printStackTrace();</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        }</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    }</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;}</div>
+<div class="ttc" id="a00011_html_a9b21316d9d684db6bcb9053c6ad16755"><div class="ttname"><a href="../../da/d45/a00011.html#a9b21316d9d684db6bcb9053c6ad16755">com.board.DBConnect.readParam</a></div><div class="ttdeci">static String[] readParam</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d42/a00043_source.html#l00029">DBConnect.java:29</a></div></div>
+<div class="ttc" id="a00011_html_ad6e6292d042b508db86c3d5d090fd3c7"><div class="ttname"><a href="../../da/d45/a00011.html#ad6e6292d042b508db86c3d5d090fd3c7">com.board.DBConnect.writeParam</a></div><div class="ttdeci">static String[] writeParam</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d42/a00043_source.html#l00030">DBConnect.java:30</a></div></div>
+<div class="ttc" id="a00011_html_a221b4a30776ac1dc717edc6f331a3359"><div class="ttname"><a href="../../da/d45/a00011.html#a221b4a30776ac1dc717edc6f331a3359">com.board.DBConnect.serverEdit</a></div><div class="ttdeci">boolean serverEdit(String...params)</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d42/a00043_source.html#l00115">DBConnect.java:115</a></div></div>
+<div class="ttc" id="a00011_html_a6d799aa61ed57fa2da863c374177974a"><div class="ttname"><a href="../../da/d45/a00011.html#a6d799aa61ed57fa2da863c374177974a">com.board.DBConnect.serverWrite</a></div><div class="ttdeci">boolean serverWrite(String...params)</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d42/a00043_source.html#l00057">DBConnect.java:57</a></div></div>
+<div class="ttc" id="a00011_html_a9cff71ff1c81dc610645d6473c1ca3fd"><div class="ttname"><a href="../../da/d45/a00011.html#a9cff71ff1c81dc610645d6473c1ca3fd">com.board.DBConnect.serverDelete</a></div><div class="ttdeci">boolean serverDelete(String...params)</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d42/a00043_source.html#l00143">DBConnect.java:143</a></div></div>
+<div class="ttc" id="a00011_html_a448828b506fb0d7740b7d4afe4021bec"><div class="ttname"><a href="../../da/d45/a00011.html#a448828b506fb0d7740b7d4afe4021bec">com.board.DBConnect.doInBackground</a></div><div class="ttdeci">String doInBackground(String...urls)</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d42/a00043_source.html#l00172">DBConnect.java:172</a></div></div>
+<div class="ttc" id="a00011_html_adc98daf42b69affe6c366eed6c0b8fa1"><div class="ttname"><a href="../../da/d45/a00011.html#adc98daf42b69affe6c366eed6c0b8fa1">com.board.DBConnect.getResult</a></div><div class="ttdeci">void getResult(String...param)</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d42/a00043_source.html#l00240">DBConnect.java:240</a></div></div>
+<div class="ttc" id="a00011_html"><div class="ttname"><a href="../../da/d45/a00011.html">com.board.DBConnect</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d42/a00043_source.html#l00025">DBConnect.java:25</a></div></div>
+<div class="ttc" id="a00011_html_a12a83bd2551d1bb771a5f403f8926309"><div class="ttname"><a href="../../da/d45/a00011.html#a12a83bd2551d1bb771a5f403f8926309">com.board.DBConnect.jsonList</a></div><div class="ttdeci">static ArrayList&lt; String[]&gt; jsonList</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d42/a00043_source.html#l00027">DBConnect.java:27</a></div></div>
+<div class="ttc" id="a00011_html_a1e9c90af52b391c165125c0726d5a41b"><div class="ttname"><a href="../../da/d45/a00011.html#a1e9c90af52b391c165125c0726d5a41b">com.board.DBConnect.serverContext</a></div><div class="ttdeci">String serverContext(String params, String idx)</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d42/a00043_source.html#l00085">DBConnect.java:85</a></div></div>
+<div class="ttc" id="a00011_html_a5ff12039919753c509fb687392d11c76"><div class="ttname"><a href="../../da/d45/a00011.html#a5ff12039919753c509fb687392d11c76">com.board.DBConnect.getURLQuery</a></div><div class="ttdeci">String getURLQuery(List&lt; BasicNameValuePair &gt; params)</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d42/a00043_source.html#l00217">DBConnect.java:217</a></div></div>
+<div class="ttc" id="a00011_html_a974fea55e426061eb3e3c0ee9c9217e5"><div class="ttname"><a href="../../da/d45/a00011.html#a974fea55e426061eb3e3c0ee9c9217e5">com.board.DBConnect.serverRead</a></div><div class="ttdeci">ArrayList&lt; String[]&gt; serverRead(String...params)</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d42/a00043_source.html#l00032">DBConnect.java:32</a></div></div>
+<div class="ttc" id="a00011_html_ab4303261ff7360b51ab25379d6c0ab4d"><div class="ttname"><a href="../../da/d45/a00011.html#ab4303261ff7360b51ab25379d6c0ab4d">com.board.DBConnect.dbResult</a></div><div class="ttdeci">static String dbResult</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d42/a00043_source.html#l00026">DBConnect.java:26</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dir_909cbace013f1fcaaa9ba76d526b50b4.html">eclipse_Android</a></li><li class="navelem"><a class="el" href="../../dir_b99160f50cf04599aa7661a791fa389b.html">code</a></li><li class="navelem"><a class="el" href="../../dir_19ec672f7d4601a2f335c7018a1221ed.html">And_cildern</a></li><li class="navelem"><a class="el" href="../../dir_95c841e439819513c33cb78f59b4db9a.html">src</a></li><li class="navelem"><a class="el" href="../../dir_8a32ae8b13c637d54d3cdeec62fdc5a8.html">com</a></li><li class="navelem"><a class="el" href="../../dir_7606f05f6fa6f35746ae929cab1b6f5a.html">board</a></li><li class="navelem"><a class="el" href="../../d6/d42/a00043.html">DBConnect.java</a></li>
+    <li class="footer">생성시간 : 목 3월 19 2015 17:33:43, 프로젝트명 : My Project, 생성자 : 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>My Project: D:/eclipse_Android/code/And_cildern/src/com/example/image/CustomGridViewAdapter.java 소스 파일</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'검색');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>메인&#160;페이지</span></a></li>
+      <li><a href="../../namespaces.html"><span>패키지</span></a></li>
+      <li><a href="../../annotated.html"><span>클래스</span></a></li>
+      <li class="current"><a href="../../files.html"><span>파일들</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="검색" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../files.html"><span>파일&#160;목록</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('d2/d79/a00051_source.html','../../');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>모두</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>클래스</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>네임스페이스들</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>파일들</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>함수</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>변수</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">CustomGridViewAdapter.java</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d2/d79/a00051.html">이 파일의 문서화 페이지로 가기</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">package </span>com.example.image;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">import</span> java.util.ArrayList;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">import</span> <a class="code" href="../../dc/de2/a00024.html">com.example.and_cildern.R</a>;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">import</span> <a class="code" href="../../d4/d51/a00017.html">com.example.image.Item</a>;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">import</span> android.app.Activity;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">import</span> android.content.Context;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">import</span> android.view.LayoutInflater;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">import</span> android.view.View;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">import</span> android.view.ViewGroup;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">import</span> android.widget.ArrayAdapter;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">import</span> android.widget.ImageView;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">import</span> android.widget.TextView;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="../../d4/dee/a00008.html">   19</a></span>&#160;<span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="../../d4/dee/a00008.html">CustomGridViewAdapter</a> <span class="keyword">extends</span> ArrayAdapter&lt;Item&gt; {</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="../../d4/dee/a00008.html#adf9278dae6899b4b92e4d17fc3d6e1c5">   20</a></span>&#160;    Context <a class="code" href="../../d4/dee/a00008.html#adf9278dae6899b4b92e4d17fc3d6e1c5">context</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="../../d4/dee/a00008.html#a2d318fc9ee333083a14f3ec1d5d8a3a1">   21</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../d4/dee/a00008.html#a2d318fc9ee333083a14f3ec1d5d8a3a1">layoutResourceId</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="../../d4/dee/a00008.html#a80cc16e2ed98d7cd8d568e53bc4238a6">   22</a></span>&#160;    ArrayList&lt;Item&gt; <a class="code" href="../../d4/dee/a00008.html#a80cc16e2ed98d7cd8d568e53bc4238a6">data</a> = <span class="keyword">new</span> ArrayList&lt;Item&gt;();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="../../d4/dee/a00008.html#ac9711c8b33f7bddfd72dba819d61abe0">   30</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="../../d4/dee/a00008.html#ac9711c8b33f7bddfd72dba819d61abe0">CustomGridViewAdapter</a>(Context <a class="code" href="../../d4/dee/a00008.html#adf9278dae6899b4b92e4d17fc3d6e1c5">context</a>, <span class="keywordtype">int</span> <a class="code" href="../../d4/dee/a00008.html#a2d318fc9ee333083a14f3ec1d5d8a3a1">layoutResourceId</a>,</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            ArrayList&lt;Item&gt; <a class="code" href="../../d4/dee/a00008.html#a80cc16e2ed98d7cd8d568e53bc4238a6">data</a>) {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        super(context, layoutResourceId, data);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        this.layoutResourceId = <a class="code" href="../../d4/dee/a00008.html#a2d318fc9ee333083a14f3ec1d5d8a3a1">layoutResourceId</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        this.context = <a class="code" href="../../d4/dee/a00008.html#adf9278dae6899b4b92e4d17fc3d6e1c5">context</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        this.data = <a class="code" href="../../d4/dee/a00008.html#a80cc16e2ed98d7cd8d568e53bc4238a6">data</a>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    @Override   </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="../../d4/dee/a00008.html#aeb3373beedadcf75016849625a84bf0d">   39</a></span>&#160;    <span class="keyword">public</span> View <a class="code" href="../../d4/dee/a00008.html#aeb3373beedadcf75016849625a84bf0d">getView</a>(<span class="keywordtype">int</span> position, View convertView, ViewGroup parent) {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        View row = convertView;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <a class="code" href="../../d3/dfe/a00025.html">RecordHolder</a> holder = null;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordflow">if</span> (row == null) {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            LayoutInflater inflater = ((Activity) <a class="code" href="../../d4/dee/a00008.html#adf9278dae6899b4b92e4d17fc3d6e1c5">context</a>).getLayoutInflater();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            row = inflater.inflate(<a class="code" href="../../d4/dee/a00008.html#a2d318fc9ee333083a14f3ec1d5d8a3a1">layoutResourceId</a>, parent, <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            holder = <span class="keyword">new</span> <a class="code" href="../../d3/dfe/a00025.html">RecordHolder</a>();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            holder.txtTitle = (TextView) row.findViewById(<a class="code" href="../../dc/de2/a00024.html">R</a>.id.item_text);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            holder.imageItem = (ImageView) row.findViewById(<a class="code" href="../../dc/de2/a00024.html">R</a>.id.item_image);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            row.setTag(holder);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            holder = (<a class="code" href="../../d3/dfe/a00025.html">RecordHolder</a>) row.getTag();</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <a class="code" href="../../d4/d51/a00017.html">Item</a> item = data.get(position);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="comment">//holder.txtTitle.setText(item.getTitle());</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        holder.imageItem.setImageBitmap(item.getImage());</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordflow">return</span> row;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="../../d3/dfe/a00025.html">   61</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">class </span><a class="code" href="../../d3/dfe/a00025.html">RecordHolder</a> {</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="../../d3/dfe/a00025.html#ae31dbb34dfe4d8e9a4e2c5b031f288ae">   62</a></span>&#160;        TextView <a class="code" href="../../d3/dfe/a00025.html#ae31dbb34dfe4d8e9a4e2c5b031f288ae">txtTitle</a>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="../../d3/dfe/a00025.html#ab2222a6a89a871b78651d32f9f0c7af5">   63</a></span>&#160;        ImageView <a class="code" href="../../d3/dfe/a00025.html#ab2222a6a89a871b78651d32f9f0c7af5">imageItem</a>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}</div>
+<div class="ttc" id="a00024_html"><div class="ttname"><a href="../../dc/de2/a00024.html">com.example.and_cildern.R</a></div><div class="ttdef"><b>Definition:</b> <a href="../../de/d8c/a00036_source.html#l00010">R.java:10</a></div></div>
+<div class="ttc" id="a00008_html_aeb3373beedadcf75016849625a84bf0d"><div class="ttname"><a href="../../d4/dee/a00008.html#aeb3373beedadcf75016849625a84bf0d">com.example.image.CustomGridViewAdapter.getView</a></div><div class="ttdeci">View getView(int position, View convertView, ViewGroup parent)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d79/a00051_source.html#l00039">CustomGridViewAdapter.java:39</a></div></div>
+<div class="ttc" id="a00008_html_a2d318fc9ee333083a14f3ec1d5d8a3a1"><div class="ttname"><a href="../../d4/dee/a00008.html#a2d318fc9ee333083a14f3ec1d5d8a3a1">com.example.image.CustomGridViewAdapter.layoutResourceId</a></div><div class="ttdeci">int layoutResourceId</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d79/a00051_source.html#l00021">CustomGridViewAdapter.java:21</a></div></div>
+<div class="ttc" id="a00017_html"><div class="ttname"><a href="../../d4/d51/a00017.html">com.example.image.Item</a></div><div class="ttdoc">사진 게시판 아이템 클래스 </div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d84/a00052_source.html#l00009">Item.java:9</a></div></div>
+<div class="ttc" id="a00008_html_adf9278dae6899b4b92e4d17fc3d6e1c5"><div class="ttname"><a href="../../d4/dee/a00008.html#adf9278dae6899b4b92e4d17fc3d6e1c5">com.example.image.CustomGridViewAdapter.context</a></div><div class="ttdeci">Context context</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d79/a00051_source.html#l00020">CustomGridViewAdapter.java:20</a></div></div>
+<div class="ttc" id="a00008_html_a80cc16e2ed98d7cd8d568e53bc4238a6"><div class="ttname"><a href="../../d4/dee/a00008.html#a80cc16e2ed98d7cd8d568e53bc4238a6">com.example.image.CustomGridViewAdapter.data</a></div><div class="ttdeci">ArrayList&lt; Item &gt; data</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d79/a00051_source.html#l00022">CustomGridViewAdapter.java:22</a></div></div>
+<div class="ttc" id="a00008_html_ac9711c8b33f7bddfd72dba819d61abe0"><div class="ttname"><a href="../../d4/dee/a00008.html#ac9711c8b33f7bddfd72dba819d61abe0">com.example.image.CustomGridViewAdapter.CustomGridViewAdapter</a></div><div class="ttdeci">CustomGridViewAdapter(Context context, int layoutResourceId, ArrayList&lt; Item &gt; data)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d79/a00051_source.html#l00030">CustomGridViewAdapter.java:30</a></div></div>
+<div class="ttc" id="a00025_html"><div class="ttname"><a href="../../d3/dfe/a00025.html">com.example.image.CustomGridViewAdapter.RecordHolder</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d79/a00051_source.html#l00061">CustomGridViewAdapter.java:61</a></div></div>
+<div class="ttc" id="a00025_html_ae31dbb34dfe4d8e9a4e2c5b031f288ae"><div class="ttname"><a href="../../d3/dfe/a00025.html#ae31dbb34dfe4d8e9a4e2c5b031f288ae">com.example.image.CustomGridViewAdapter.RecordHolder.txtTitle</a></div><div class="ttdeci">TextView txtTitle</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d79/a00051_source.html#l00062">CustomGridViewAdapter.java:62</a></div></div>
+<div class="ttc" id="a00008_html"><div class="ttname"><a href="../../d4/dee/a00008.html">com.example.image.CustomGridViewAdapter</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d79/a00051_source.html#l00019">CustomGridViewAdapter.java:19</a></div></div>
+<div class="ttc" id="a00025_html_ab2222a6a89a871b78651d32f9f0c7af5"><div class="ttname"><a href="../../d3/dfe/a00025.html#ab2222a6a89a871b78651d32f9f0c7af5">com.example.image.CustomGridViewAdapter.RecordHolder.imageItem</a></div><div class="ttdeci">ImageView imageItem</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d79/a00051_source.html#l00063">CustomGridViewAdapter.java:63</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dir_909cbace013f1fcaaa9ba76d526b50b4.html">eclipse_Android</a></li><li class="navelem"><a class="el" href="../../dir_b99160f50cf04599aa7661a791fa389b.html">code</a></li><li class="navelem"><a class="el" href="../../dir_19ec672f7d4601a2f335c7018a1221ed.html">And_cildern</a></li><li class="navelem"><a class="el" href="../../dir_95c841e439819513c33cb78f59b4db9a.html">src</a></li><li class="navelem"><a class="el" href="../../dir_8a32ae8b13c637d54d3cdeec62fdc5a8.html">com</a></li><li class="navelem"><a class="el" href="../../dir_366aa02334bef891a0385ce55602ee08.html">example</a></li><li class="navelem"><a class="el" href="../../dir_660092f69d13a98f81604d16efc329d0.html">image</a></li><li class="navelem"><a class="el" href="../../d2/d79/a00051.html">CustomGridViewAdapter.java</a></li>
+    <li class="footer">생성시간 : 목 3월 19 2015 17:33:43, 프로젝트명 : My Project, 생성자 : 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
+  </ul>
+</div>
+</body>
+</html>

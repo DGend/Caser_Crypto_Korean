@@ -1,0 +1,4 @@
+<map id="com.board.SN_board04" name="com.board.SN_board04">
+<area shape="rect" id="node10" href="$de/d21/a00006.html" title="{com.board.CustomAdapter\n|&#45; mLayoutResource\l|+ CustomAdapter()\l+ getCount()\l+ getItem()\l+ getPosition()\l+ getView()\l}" alt="" coords="403,197,580,333"/>
+<area shape="rect" id="node5" href="$da/d45/a00011.html" title="{com.board.DBConnect\n|~ dbResult\l~ readParam\l~ writeParam\l|+ serverRead()\l+ serverWrite()\l+ serverContext()\l+ serverEdit()\l+ serverDelete()\l+ getResult()\l# doInBackground()\l&#45; getURLQuery()\l}" alt="" coords="632,160,785,369"/>
+</map>
